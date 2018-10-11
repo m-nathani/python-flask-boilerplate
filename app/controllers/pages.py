@@ -14,11 +14,6 @@ def home():
     return render_template('pages/placeholder.home.html')
 
 
-@blueprint.route('/about')
-def about():
-    return render_template('pages/placeholder.about.html')
-
-
 @blueprint.route('/login')
 def login():
     form = LoginForm(request.form)
